@@ -24,11 +24,13 @@
         <param name="ios-package" value="GoogleAppTracking"/>
       </feature>
     </config-file>
-
-    <header-file src="src/ios/GoogleConversionPing.h" />
-    <header-file src="src/ios/GoogleAppTracking.h" />
-    <source-file src="src/ios/GoogleAppTracking.m" />
-    <source-file src="lib/ios/libGoogleConversionTracking.a" framework="true"/>
+      
+      <framework src="AdSupport.framework" />
+      
+      <header-file src="src/ios/GoogleConversionPing.h" />
+      <header-file src="src/ios/GoogleAppTracking.h" />
+      <source-file src="src/ios/GoogleAppTracking.m" />
+      <source-file src="lib/ios/libGoogleConversionTracking.a" framework="true"/>
   </platform>
 
   <platform name="android">
